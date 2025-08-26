@@ -1,0 +1,640 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <title>WHISTLES HEALTHCARE SOLUTIONS</title>
+  <meta content="" name="description">
+  <meta content="" name="keywords">
+
+  <!-- Favicons -->
+  <link href="assets/img/favicon.png" rel="icon">
+  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com" rel="preconnect">
+  <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet"><link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet"><!-- Main CSS File -->
+  <link href="assets/css/main.css" rel="stylesheet">
+
+
+<style>
+:root{
+  --wh-teal:#2bcbd0;
+  --wh-deep:#0a6a9f;
+  --wh-dark:#0f2a3a;
+  --ink:#062534;
+}
+/* Global */
+body{scroll-behavior:smooth}
+.section-title p{max-width:70ch;margin-inline:auto}
+
+/* Header: leave template styles via main.css */
+
+/* Hero */
+.hero.section{
+  position:relative;
+  background: radial-gradient(1600px 700px at -10% -20%, rgba(255,255,255,.22), transparent),
+              linear-gradient(135deg, var(--wh-teal), var(--wh-deep));
+  overflow:hidden;
+}
+.hero .container{padding-top:6rem;padding-bottom:6rem}
+.hero h2{
+  color:#fff;font-weight:800;font-size:clamp(2rem,4vw,3.25rem);line-height:1.1;letter-spacing:.2px;
+}
+.hero p.lead{color:#e9fbff;font-size:1.125rem;max-width:46ch;margin:.75rem 0 1.5rem}
+.brand-tag{color:#ddfbff;opacity:.85;font-weight:600;letter-spacing:.5px;margin-bottom:6px}
+.btn-wh-primary{
+  background:#6be2e6;border:none;color:#063648;padding:.85rem 1.35rem;border-radius:16px;font-weight:600;
+  box-shadow:0 10px 24px rgba(0,0,0,.12);
+}
+.btn-wh-outline{
+  background:transparent;border:1.5px solid #bff3f5;color:#fff;padding:.85rem 1.35rem;border-radius:16px;font-weight:600;
+}
+.hero .mock-img{max-width:520px;border-radius:24px;box-shadow:0 30px 70px rgba(3,26,39,.45)}
+
+/* Stats */
+#stats i{color:#e8fbff;font-size:2rem;background:rgba(255,255,255,.2);border-radius:12px;padding:.5rem}
+#stats .stats-item span{color:#043449}
+
+/* About */
+#about img{border-radius:18px;box-shadow:0 10px 28px rgba(9,59,86,.12)}
+
+/* Services */
+.services .service-item{border-radius:18px;box-shadow:0 10px 28px rgba(9,59,86,.08)}
+
+/* Roles (Jobs) */
+#roles .role-card{border-radius:16px;border:1px solid #e9f2f5;padding:1rem 1.25rem;box-shadow:0 6px 18px rgba(7,44,66,.06)}
+#roles .badge{font-weight:600}
+#roles .filters .form-select{max-width:220px}
+
+/* Process */
+#process .step{border-radius:16px;padding:1.25rem;border:1px dashed rgba(6,37,52,.2);background:#f6fbfc}
+
+/* FAQs */
+#faqs .accordion-button{font-weight:600}
+
+/* Footer */
+.footer{background:#051723;color:#a6c8d5}
+.footer .sitename{color:#eaffff}
+
+/* Utilities */
+.mt-6{margin-top:4.5rem}
+</style>
+
+</head>
+
+<body class="index-page">
+
+  <header id="header" class="header d-flex flex-column justify-content-center">
+
+    <i class="header-toggle d-xl-none bi bi-list"></i>
+
+    
+<nav id="navmenu" class="navmenu">
+  <ul>
+    <li><a href="#hero" class="active"><i class="bi bi-house navicon"></i><span>Home</span></a></li>
+    <li><a href="#about"><i class="bi bi-heart-pulse navicon"></i><span>About</span></a></li>
+    <li><a href="#services"><i class="bi bi-hdd-stack navicon"></i><span>Services</span></a></li>
+    <li><a href="#roles"><i class="bi bi-briefcase navicon"></i><span>Roles</span></a></li>
+    <li><a href="#process"><i class="bi bi-diagram-3 navicon"></i><span>Process</span></a></li>
+    <li><a href="#faqs"><i class="bi bi-question-circle navicon"></i><span>FAQs</span></a></li>
+    <li><a href="#contact"><i class="bi bi-envelope navicon"></i><span>Contact</span></a></li>
+  </ul>
+</nav>
+
+
+  </header>
+
+  <main class="main">
+
+    
+<!-- Hero Section -->
+<section id="hero" class="hero section">
+  <div class="container" data-aos="zoom-out">
+    <div class="row align-items-center justify-content-center g-4">
+      <div class="col-lg-6 text-center">
+        <img src="assets/img/mockup.png" alt="App mockup" class="img-fluid mock-img">
+      </div>
+      <div class="col-lg-6 text-center text-lg-start">
+        <div class="brand-tag">WHISTLES • HEALTHCARE SOLUTIONS</div>
+        <h2>Smart, Reliable Healthcare Staffing at Your Fingertips.</h2>
+        <p class="lead">Hire RNs, LPNs, and CNAs with ease. Shift coverage, compliance, and support—made simple.</p>
+        <div class="d-flex flex-wrap gap-3 justify-content-center justify-content-lg-start">
+          <a href="#roles" class="btn btn-wh-primary">View Roles</a>
+          <a href="#contact" class="btn btn-wh-outline">Request Staff</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- /Hero Section -->
+
+
+    <!-- About Section -->
+    <section id="about" class="about section">
+  <div class="container section-title" data-aos="fade-up">
+    <h2>About Us</h2>
+    <p>Whistles Healthcare Solutions is a staffing partner dedicated to dependable coverage, credentialed talent, and patient-first care. We help hospitals, clinics, and long-term care facilities close gaps quickly—without compromising quality.</p>
+  </div>
+  <div class="container" data-aos="fade-up" data-aos-delay="100">
+    <div class="row gy-4 align-items-center">
+      <div class="col-lg-6">
+        <img src="assets/img/healthcare-team.jpg" class="img-fluid rounded-4 shadow" alt="Healthcare team at work">
+      </div>
+      <div class="col-lg-6 content">
+        <h3>What We Stand For</h3>
+        <ul class="mt-3">
+          <li class="mb-2">
+            <i class="bi bi-shield-check me-2 text-success"></i>
+            <strong>Verified &amp; Compliant:</strong> License checks, background screening, TB/Immunizations, and required trainings.
+          </li>
+          <li class="mb-2">
+            <i class="bi bi-clock-history me-2 text-success"></i>
+            <strong>Speed with Standards:</strong> Average per-diem fill in under 24 hours across our Puget Sound network.
+          </li>
+          <li class="mb-2">
+            <i class="bi bi-heart-pulse me-2 text-success"></i>
+            <strong>Patient-First Professionals:</strong> RNs, LPNs, and CNAs matched to unit acuity and culture.
+          </li>
+          <li class="mb-2">
+            <i class="bi bi-headset me-2 text-success"></i>
+            <strong>Always Available:</strong> 24/7 coordinator support for last-minute or ongoing coverage.
+          </li>
+        </ul>
+        <div class="row g-3 mt-2 small">
+          <div class="col-6">
+            <i class="bi bi-people me-1"></i> 450+ clinicians in network
+          </div>
+          <div class="col-6">
+            <i class="bi bi-hospital me-1"></i> 38 partner facilities
+          </div>
+          <div class="col-6">
+            <i class="bi bi-geo-alt me-1"></i> Puget Sound &amp; beyond
+          </div>
+          <div class="col-6">
+            <i class="bi bi-award me-1"></i> Compliance-first operations
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section><!-- /About Section -->
+
+    <!-- Stats Section -->
+    
+<section id="stats" class="stats section light-background">
+  <div class="container" data-aos="fade-up" data-aos-delay="100">
+    <div class="row gy-4 text-center">
+      <div class="col-lg-3 col-md-6 d-flex flex-column align-items-center">
+        <i class="bi bi-people-fill"></i>
+        <div class="stats-item">
+          <span data-purecounter-start="0" data-purecounter-end="450" data-purecounter-duration="1" class="purecounter"></span>
+          <p>Nurses in Network</p>
+        </div>
+      </div>
+      <div class="col-lg-3 col-md-6 d-flex flex-column align-items-center">
+        <i class="bi bi-hospital"></i>
+        <div class="stats-item">
+          <span data-purecounter-start="0" data-purecounter-end="38" data-purecounter-duration="1" class="purecounter"></span>
+          <p>Facilities Served</p>
+        </div>
+      </div>
+      <div class="col-lg-3 col-md-6 d-flex flex-column align-items-center">
+        <i class="bi bi-stopwatch"></i>
+        <div class="stats-item">
+          <span data-purecounter-start="0" data-purecounter-end="24" data-purecounter-duration="1" class="purecounter"></span>
+          <p>Avg Fill Time (hrs)</p>
+        </div>
+      </div>
+      <div class="col-lg-3 col-md-6 d-flex flex-column align-items-center">
+        <i class="bi bi-headset"></i>
+        <div class="stats-item">
+          <span data-purecounter-start="0" data-purecounter-end="24" data-purecounter-duration="1" class="purecounter"></span>
+          <p>Support Hours</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- /Stats Section -->
+
+    <!-- Services Section -->
+    <section id="services" class="services section">
+  <div class="container section-title" data-aos="fade-up">
+    <h2>Our Services</h2>
+    <p>Flexible, on-demand staffing and support built for real-world census changes—per diem, contract, and full-time.</p>
+  </div>
+  <div class="container">
+    <div class="row gy-4">
+
+      <!-- RN Staffing -->
+      <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="100">
+        <div class="service-item item-cyan position-relative">
+          <div class="icon"><i class="bi bi-heart-pulse"></i></div>
+          <h3>Registered Nurses (RNs)</h3>
+          <p>Experienced RNs for Med-Surg, ICU, ER, Telemetry, and specialty units—aligned to your workflows.</p>
+        </div>
+      </div>
+
+      <!-- LPN Staffing -->
+      <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="150">
+        <div class="service-item item-teal position-relative">
+          <div class="icon"><i class="bi bi-person-badge"></i></div>
+          <h3>Licensed Practical Nurses (LPNs)</h3>
+          <p>Reliable LPNs for clinics, SNFs, and LTC—med pass, wound care, charting, and patient education.</p>
+        </div>
+      </div>
+
+      <!-- CNA Staffing -->
+      <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="200">
+        <div class="service-item item-indigo position-relative">
+          <div class="icon"><i class="bi bi-people"></i></div>
+          <h3>Certified Nursing Assistants (CNAs)</h3>
+          <p>Compassionate CNAs for ADLs, vitals, transfers, and rounding—improving throughput and satisfaction.</p>
+        </div>
+      </div>
+
+      <!-- Shift Coverage -->
+      <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="250">
+        <div class="service-item item-orange position-relative">
+          <div class="icon"><i class="bi bi-calendar-week"></i></div>
+          <h3>Shift &amp; Schedule Coverage</h3>
+          <p>Per-diem, short-term, and long-term coverage to stabilize staffing and reduce burnout.</p>
+        </div>
+      </div>
+
+      <!-- Credentialing -->
+      <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="300">
+        <div class="service-item item-red position-relative">
+          <div class="icon"><i class="bi bi-clipboard2-check"></i></div>
+          <h3>Credentialing &amp; Compliance</h3>
+          <p>End-to-end documentation management—licenses, immunizations, background checks, and trainings.</p>
+        </div>
+      </div>
+
+      <!-- Support -->
+      <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="350">
+        <div class="service-item item-pink position-relative">
+          <div class="icon"><i class="bi bi-headset"></i></div>
+          <h3>24/7 Coordinator Support</h3>
+          <p>Dedicated point of contact for urgent needs, onboarding, and ongoing assignment support.</p>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section><!-- /Services Section -->
+
+<section id="process" class="section mt-6">
+  <div class="container section-title" data-aos="fade-up">
+    <h2>How It Works</h2>
+    <p>Three simple steps to dependable coverage.</p>
+  </div>
+  <div class="container" data-aos="fade-up" data-aos-delay="100">
+    <div class="row g-4">
+      <div class="col-md-4"><div class="step h-100"><h5><i class="bi bi-chat-square-text me-2"></i>1. Request</h5><p>Tell us your unit, shift times, and requirements.</p></div></div>
+      <div class="col-md-4"><div class="step h-100"><h5><i class="bi bi-person-check me-2"></i>2. Match</h5><p>We present vetted candidates that meet your needs.</p></div></div>
+      <div class="col-md-4"><div class="step h-100"><h5><i class="bi bi-clipboard2-check me-2"></i>3. Start</h5><p>Confirm and start—our coordinators support 24/7.</p></div></div>
+    </div>
+  </div>
+</section>
+
+<section id="faqs" class="section mt-6">
+  <div class="container section-title" data-aos="fade-up">
+    <h2>FAQs</h2>
+    <p>Quick answers about staffing, screening, and payments.</p>
+  </div>
+  <div class="container" data-aos="fade-up" data-aos-delay="100">
+    <div class="accordion" id="faqAcc">
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="q1"><button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#a1">How fast can you fill a shift?</button></h2>
+        <div id="a1" class="accordion-collapse collapse show" data-bs-parent="#faqAcc"><div class="accordion-body">Most per‑diem shifts are filled within 24 hours; urgent coverage can be faster depending on location and credentials.</div></div>
+      </div>
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="q2"><button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#a2">Do you verify credentials and background checks?</button></h2>
+        <div id="a2" class="accordion-collapse collapse" data-bs-parent="#faqAcc"><div class="accordion-body">Yes. We verify licenses, work history, TB/Immunizations, and complete background checks per facility requirements.</div></div>
+      </div>
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="q3"><button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#a3">Which payment options do you support?</button></h2>
+        <div id="a3" class="accordion-collapse collapse" data-bs-parent="#faqAcc"><div class="accordion-body">We support standard invoicing for facilities and direct deposit for clinicians.</div></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+<section id="roles" class="section mt-6">
+  <div class="container section-title" data-aos="fade-up">
+    <h2>Open Roles</h2>
+    <p>Here are current shifts and placements we’re filling now. Apply or request coverage.</p>
+  </div>
+  <div class="container" data-aos="fade-up" data-aos-delay="100">
+    <div class="row filters mb-3 align-items-center g-3">
+      <div class="col-auto">
+        <select id="filterRole" class="form-select">
+          <option value="All" selected>All Roles</option>
+          <option value="RN">Registered Nurse (RN)</option>
+          <option value="LPN">Licensed Practical Nurse (LPN)</option>
+          <option value="CNA">Certified Nursing Assistant (CNA)</option>
+        </select>
+      </div>
+      <div class="col-auto">
+        <select id="filterType" class="form-select">
+          <option value="All" selected>All Types</option>
+          <option value="Per Diem">Per Diem</option>
+          <option value="Full-time">Full-time</option>
+          <option value="Contract">Contract</option>
+        </select>
+      </div>
+    </div>
+    <div id="rolesGrid" class="row gy-4"></div>
+  </div>
+</section>
+
+
+    <!-- Testimonials Section -->
+    <section id="testimonials" class="testimonials section">
+
+      <!-- Section Title -->
+      <div class="container section-title" data-aos="fade-up">
+        <h2>Testimonials</h2>
+        <p>Necessitatibus eius consequatur ex aliquid fuga eum quidem sint consectetur velit</p>
+      </div><!-- End Section Title -->
+
+      <div class="container" data-aos="fade-up" data-aos-delay="100">
+
+        <div class="swiper init-swiper">
+          <script type="application/json" class="swiper-config">
+            {
+              "loop": true,
+              "speed": 600,
+              "autoplay": {
+                "delay": 5000
+              },
+              "slidesPerView": "auto",
+              "pagination": {
+                "el": ".swiper-pagination",
+                "type": "bullets",
+                "clickable": true
+              }
+            }
+          </script>
+          <div class="swiper-wrapper">
+
+            <div class="swiper-slide">
+              <div class="testimonial-item">
+                <div class="row gy-4 justify-content-center">
+                  <div class="col-lg-6">
+                    <div class="testimonial-content">
+                      <p>
+                        <i class="bi bi-quote quote-icon-left"></i>
+                        <span>Proin iaculis purus consequat sem cure digni ssim donec porttitora entum suscipit rhoncus. Accusantium quam, ultricies eget id, aliquam eget nibh et. Maecen aliquam, risus at semper.</span>
+                        <i class="bi bi-quote quote-icon-right"></i>
+                      </p>
+                      <h3>Saul Goodman</h3>
+                      <h4>Ceo &amp; Founder</h4>
+                      <div class="stars">
+                        <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-lg-2 text-center">
+                    <img src="assets/img/testimonials/testimonials-1.jpg" class="img-fluid testimonial-img" alt="">
+                  </div>
+                </div>
+              </div>
+            </div><!-- End testimonial item -->
+
+            <div class="swiper-slide">
+              <div class="testimonial-item">
+                <div class="row gy-4 justify-content-center">
+                  <div class="col-lg-6">
+                    <div class="testimonial-content">
+                      <p>
+                        <i class="bi bi-quote quote-icon-left"></i>
+                        <span>Export tempor illum tamen malis malis eram quae irure esse labore quem cillum quid cillum eram malis quorum velit fore eram velit sunt aliqua noster fugiat irure amet legam anim culpa.</span>
+                        <i class="bi bi-quote quote-icon-right"></i>
+                      </p>
+                      <h3>Sara Wilsson</h3>
+                      <h4>Designer</h4>
+                      <div class="stars">
+                        <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-lg-2 text-center">
+                    <img src="assets/img/testimonials/testimonials-2.jpg" class="img-fluid testimonial-img" alt="">
+                  </div>
+                </div>
+              </div>
+            </div><!-- End testimonial item -->
+
+            <div class="swiper-slide">
+              <div class="testimonial-item">
+                <div class="row gy-4 justify-content-center">
+                  <div class="col-lg-6">
+                    <div class="testimonial-content">
+                      <p>
+                        <i class="bi bi-quote quote-icon-left"></i>
+                        <span>Enim nisi quem export duis labore cillum quae magna enim sint quorum nulla quem veniam duis minim tempor labore quem eram duis noster aute amet eram fore quis sint minim.</span>
+                        <i class="bi bi-quote quote-icon-right"></i>
+                      </p>
+                      <h3>Jena Karlis</h3>
+                      <h4>Store Owner</h4>
+                      <div class="stars">
+                        <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-lg-2 text-center">
+                    <img src="assets/img/testimonials/testimonials-3.jpg" class="img-fluid testimonial-img" alt="">
+                  </div>
+                </div>
+              </div>
+            </div><!-- End testimonial item -->
+
+            <div class="swiper-slide">
+              <div class="testimonial-item">
+                <div class="row gy-4 justify-content-center">
+                  <div class="col-lg-6">
+                    <div class="testimonial-content">
+                      <p>
+                        <i class="bi bi-quote quote-icon-left"></i>
+                        <span>Fugiat enim eram quae cillum dolore dolor amet nulla culpa multos export minim fugiat minim velit minim dolor enim duis veniam ipsum anim magna sunt elit fore quem dolore labore illum veniam.</span>
+                        <i class="bi bi-quote quote-icon-right"></i>
+                      </p>
+                      <h3>John Larson</h3>
+                      <h4>Entrepreneur</h4>
+                      <div class="stars">
+                        <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-lg-2 text-center">
+                    <img src="assets/img/testimonials/testimonials-4.jpg" class="img-fluid testimonial-img" alt="">
+                  </div>
+                </div>
+              </div>
+            </div><!-- End testimonial item -->
+
+          </div>
+          <div class="swiper-pagination"></div>
+        </div>
+
+      </div>
+
+    </section><!-- /Testimonials Section -->
+
+    <!-- Contact Section -->
+    
+<section id="contact" class="contact section">
+  <div class="container section-title" data-aos="fade-up">
+    <h2>Contact</h2>
+    <p>Let’s staff your next shift or talk about joining our team.</p>
+  </div>
+  <div class="container" data-aos="fade" data-aos-delay="100">
+    <div class="row gy-4">
+      <div class="col-lg-4">
+        <div class="info-item d-flex" data-aos="fade-up" data-aos-delay="200">
+          <i class="bi bi-geo-alt flex-shrink-0"></i>
+          <div><h3>Address</h3><p>Federal Way, WA</p></div>
+        </div>
+        <div class="info-item d-flex" data-aos="fade-up" data-aos-delay="300">
+          <i class="bi bi-telephone flex-shrink-0"></i>
+          <div><h3>Call Us</h3><p>913-215-1646</p></div>
+        </div>
+        <div class="info-item d-flex" data-aos="fade-up" data-aos-delay="400">
+          <i class="bi bi-envelope flex-shrink-0"></i>
+          <div><h3>Email Us</h3><p>whistlesstaff@gmail.com</p></div>
+        </div>
+      </div>
+      <div class="col-lg-8">
+        <form id="contactForm" class="php-email-form" data-aos="fade-up" data-aos-delay="200">
+          <div class="row gy-4">
+            <div class="col-md-6"><input type="text" id="name" class="form-control" placeholder="Your Name" required></div>
+            <div class="col-md-6"><input type="email" id="email" class="form-control" placeholder="Your Email" required></div>
+            <div class="col-md-12"><input type="text" id="subject" class="form-control" placeholder="Subject" required></div>
+            <div class="col-md-12"><textarea id="message" class="form-control" rows="6" placeholder="Message" required></textarea></div>
+            <div class="col-md-12 text-center">
+              <button type="submit" class="btn btn-wh-primary">Send Message</button>
+              <div id="formStatus" class="mt-2 small"></div>
+            </div>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- /Contact Section -->
+
+  </main>
+
+  <footer id="footer" class="footer position-relative light-background">
+    <div class="container">
+      <h3 class="sitename">WHISTLES HEALTHCARE SOLUTIONS</h3>
+      <p>Et aut eum quis fuga eos sunt ipsa nihil. Labore corporis magni eligendi fuga maxime saepe commodi placeat.</p>
+      <div class="social-links d-flex justify-content-center">
+        <a href=""><i class="bi bi-twitter-x"></i></a>
+        <a href=""><i class="bi bi-facebook"></i></a>
+        <a href=""><i class="bi bi-instagram"></i></a>
+        <a href=""><i class="bi bi-skype"></i></a>
+        <a href=""><i class="bi bi-linkedin"></i></a>
+      </div>
+      <div class="container">
+        <div class="copyright">
+          <span>Copyright</span> <strong class="px-1 sitename">WHISTLES HEALTHCARE SOLUTIONS</strong> <span>All Rights Reserved</span>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Scroll Top -->
+  <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+  <!-- Preloader -->
+  <div id="preloader"></div>
+
+  <!-- Vendor JS Files -->
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/php-email-form/validate.js"></script>
+  <script src="assets/vendor/aos/aos.js"></script><script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
+  <script src="assets/vendor/waypoints/noframework.waypoints.js"></script><script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+
+  <!-- Main JS File -->
+  <script src="assets/js/main.js"></script>
+<script>
+// Roles data (auto-populated)
+const JOBS = [
+  {id:1, role:"RN", title:"RN - Med/Surg", facility:"Evergreen Medical Center", location:"Federal Way, WA", type:"Per Diem", shift:"Night (7p-7a)"},
+  {id:2, role:"RN", title:"RN - ICU", facility:"Soundview Hospital", location:"Tacoma, WA", type:"Contract", shift:"Day (7a-7p)"},
+  {id:3, role:"LPN", title:"LPN - Clinic", facility:"Harbor Family Clinic", location:"Auburn, WA", type:"Full-time", shift:"Mon–Fri (8a-5p)"},
+  {id:4, role:"CNA", title:"CNA - LTC", facility:"Cedar Ridge LTC", location:"Kent, WA", type:"Per Diem", shift:"Eve (3p-11p)"},
+  {id:5, role:"CNA", title:"CNA - Hospital Float", facility:"Unity Health", location:"Seattle, WA", type:"Contract", shift:"Varies"},
+  {id:6, role:"RN", title:"RN - ER", facility:"Cascade ER Center", location:"Renton, WA", type:"Per Diem", shift:"Night (7p-7a)"}
+];
+
+function renderJobs() {
+  const roleF = document.getElementById('filterRole')?.value || 'All';
+  const typeF = document.getElementById('filterType')?.value || 'All';
+  const grid = document.getElementById('rolesGrid');
+  if(!grid) return;
+  grid.innerHTML = '';
+  JOBS.filter(j => (roleF==='All'||j.role===roleF) && (typeF==='All'||j.type===typeF))
+      .forEach(j => {
+        const col = document.createElement('div');
+        col.className = 'col-md-6 col-lg-4';
+        col.innerHTML = `
+          <div class="role-card h-100">
+            <div class="d-flex justify-content-between align-items-start">
+              <h5 class="mb-1">${j.title}</h5>
+              <span class="badge text-bg-light">${j.role}</span>
+            </div>
+            <div class="small text-muted mb-2">${j.facility} • ${j.location}</div>
+            <div class="mb-3"><i class="bi bi-calendar-week me-1"></i>${j.type} • ${j.shift}</div>
+            <div class="d-flex gap-2">
+              <a class="btn btn-sm btn-wh-primary" href="#contact" onclick="prefillContact('${j.title}')">Request Coverage</a>
+              <a class="btn btn-sm btn-outline-secondary" href="#contact" onclick="prefillContact('Applying: ${j.title}')">Apply</a>
+            </div>
+          </div>`;
+        grid.appendChild(col);
+      });
+}
+function prefillContact(subject){
+  const subj = document.getElementById('subject');
+  if(subj){ subj.value = subject; subj.focus(); }
+  const name = document.getElementById('name');
+  if(name){ name.focus(); }
+}
+document.addEventListener('change', (e)=>{
+  if(e.target.id==='filterRole' || e.target.id==='filterType'){ renderJobs(); }
+});
+document.addEventListener('DOMContentLoaded', renderJobs);
+
+// Contact form -> mailto
+document.getElementById('contactForm')?.addEventListener('submit', function(e){
+  e.preventDefault();
+  const name = document.getElementById('name').value.trim();
+  const email = document.getElementById('email').value.trim();
+  const subject = document.getElementById('subject').value.trim() || 'Website Inquiry';
+  const message = document.getElementById('message').value.trim();
+  const body = encodeURIComponent(`Name: ${name}
+Email: ${email}
+
+${message}`);
+  const mailto = `mailto:whistlesstaff@gmail.com?subject=${encodeURIComponent(subject)}&body=${body}`;
+  window.location.href = mailto;
+  const status = document.getElementById('formStatus');
+  if(status){ status.textContent = "Opening your email client…"; }
+});
+</script>
+
+</body>
+</html>
